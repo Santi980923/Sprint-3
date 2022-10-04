@@ -10,9 +10,65 @@
 <body>
     <div class="Imagenfondo">
         <div class="caja-formulario">
-            <div class="Button-box"></div>
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggleBtn" onclick="Iniciarsesion()">Iniciar Sesión</button>
+                <button type="button" class="toggleBtn" onclick="Registrarse()">Registrarse</button>
+                <button type="button" class="toggleBtn" onclick="forgot()">¿Olvidaste tu contraseña?</button>                
+            </div>
+            <div class="social-icons">
+                <img src="fb.png">
+                <img src="tw.png">
+                <img src="gp.png">
+            </div>
+            <form id="Ingresar" class="input-group">
+                <input type="text" class="input-field" placeholder="Nombre de usuario" required>
+                <input type="text" class="input-field" placeholder="Ingresar contraseña" required>
+                <button type="submit" class="submit-btn">Ingresar</button>
+            </form>
+            <form id="Registrarse" class="input-group">
+                <input type="text" class="input-field" placeholder="Nombre de usuario" required>
+                <input type="email" class="input-field" placeholder="Correo electrónico" required>
+                <input type="text" class="input-field" placeholder="Ingresar contraseña" required>
+                <button type="submit" class="submit-btn">Registrarse</button>
+            </form>
+            <form id="Olvidar-contraseña" class="input-group">
+                <input type="email" class="input-field" placeholder=" Ingresa tu Correo electrónico" required>
+                <button type="submit" class="submit-btn">Enviar un email</button>
+            </form>
         </div>
     </div>
-    
+
+    <script>
+        var movimientoingresar= document.getElementById("Ingresar");
+        var movimientoregistrar= document.getElementById("Registrarse");
+        var movimientopassword= document.getElementById("Olvidar-contraseña");
+        var slideSeleccion= document.getElementById("btn");
+
+        function Registrarse(){
+            movimientoingresar.style.left="-400px";
+            movimientopassword.style.left="-400px";
+            movimientoregistrar.style.left="50px";
+            slideSeleccion.style.left="76px";
+
+        }
+
+        function Iniciarsesion(){
+            movimientoingresar.style.left="50px";
+            movimientopassword.style.left="-400px";
+            movimientoregistrar.style.left="450px";
+            slideSeleccion.style.left="-8px";
+        }
+
+        function forgot(){
+            movimientoingresar.style.left="-300px";
+            movimientopassword.style.left="50px";
+            movimientoregistrar.style.left="450px";
+            slideSeleccion.style.left="190px";
+            
+        }
+       
+      
+    </script>
 </body>
 </html>
