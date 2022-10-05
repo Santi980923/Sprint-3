@@ -20,6 +20,17 @@
     padding: 5px;
     overflow: hidden;
 }
+
+.caja-formulario2{
+    width: 360px;
+    height: 300px;
+    position: relative;
+    margin: 6% auto;
+    background: white;
+    padding: 5px;
+    overflow: hidden;
+}
+
 .button-box{
     display: flex;
     flex-direction: row;
@@ -51,6 +62,16 @@
     height: 100%;
     background: linear-gradient(to right,#ff105f,#ffad06);
     border-radius: 30px;
+    transition: .5s;
+}
+#btn2{
+    top:  0;
+    left: 0;
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(to right,#ff105f,#ffad06);
+    border-radius: 1px;
     transition: .5s;
 }
 .social-icons{
@@ -92,6 +113,23 @@
     border: 0;
     outline: none;
     border-radius: 30px;
+}
+.pass-btn{
+    width: 85%;
+    height: 100%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 30px 30px 40px 0;
+    background: linear-gradient(to right,#ff105f,#ffad06);
+    border: 0;
+    outline: none;
+}
+.input-group2{
+    top: 130px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
 }
 #Ingresar{
     left: 50px;
