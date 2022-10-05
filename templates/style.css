@@ -41,6 +41,16 @@
     box-shadow: 0 0 18px 9px #ff61241f;
     border-radius: 30px;
 }
+.button-box2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50px;
+    margin: 35px 280px;
+    position: relative;
+    box-shadow: 0 0 18px 9px #ff61241f;
+    border-radius: 10px;
+}
 .toggleBtn{
     padding: 10px 11px;
     cursor: pointer;
@@ -74,6 +84,16 @@
     border-radius: 1px;
     transition: .5s;
 }
+#btn3{
+    top:  0;
+    left: 0;
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(to right,#ff105f,#ffad06);
+    border-radius: 10px;
+    transition: .5s;
+}
 .social-icons{
     margin: 30px auto;
     text-align: center;
@@ -88,11 +108,11 @@
 .input-group{
     top: 180px;
     position: absolute;
-    width: 280px;
+    width: 260px;
     transition: .5s;
 }
 .input-field{
-    width: 100%;
+    width: 100px;
     padding: 10px 0;
     margin: 5px 0;
     border-left: 0;
@@ -108,7 +128,7 @@
     padding: 10px 30px;
     cursor: pointer;
     display: block;
-    margin: 30px 30px 40px 0;
+    margin: 20px 40px 40px 30px;
     background: linear-gradient(to right,#ff105f,#ffad06);
     border: 0;
     outline: none;
@@ -139,4 +159,27 @@
 }
 #Olvidar-contraseña{
     right: 450px;
+}
+.MessageBox{
+    margin: -35px 35px;
+}
+.input-field{
+    width: 300px;
+    height: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+.input-field2{
+    width: 300px;
+    height: 80px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
 }
